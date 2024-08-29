@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    background-repeat: no-repeat;
+    color: white;
+    background-image:linear-gradient(to right, #01022de5 30%, #00000888),  url(/images/ca-times.brightspotcdn.webp);
+    height: 648px;
+    width: 100%;
+}
+body:hover{
+    background-image: linear-gradient(to right, #01022de5 30%, transparent), url(/images/ca-times.brightspotcdn.webp);
+    background-position: center;
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style: none;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-left: 15px;
+}
+@media (max-width:767px) {
+    nav .container{
+        padding: 5px;
+        margin-left: 5px;
+    }
+}
+nav .logo h2{
+    font-size: 30px;
+}
+@media (max-width:767px) {
+    nav .logo h2{
+        font-size: 20px;
+    }
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin-right: 15px;
+}
+@media (max-width:992px) {
+    nav ul{
+        margin-right: 60px;
+    }
+}
+nav ul li{
+    padding-left: 60px;
+}
+@media (max-width:767px) {
+    nav ul li{
+        padding-left: 20px;
+    }
+}
+nav ul li a{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+@media (max-width:992px) {
+    nav ul li a{
+        font-size: 14px;
+    }
+}
+nav ul li a:hover{
+    border-bottom: 2px solid white;
+}
+article{
+    width: 50%;
+    padding: 20px;
+    margin-top: 25px;
+}
+@media (max-width:767px) {
+    article{
+        width: 70%;
+        padding: 10px;
+        margin-top: 15px;
+        text-align: center;
+    }
+}
+article h1{
+    font-size: 50px;
+}
+@media (max-width:767px) {
+    article h1{
+        font-size: 30px;
+    }
+}
+article p{
+    line-height: 1.8;
+    padding: 20px 0;
+}
+article button{
+    padding: 6px 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    font-size: 30px;
+    text-transform: capitalize;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition-delay: 1s;
+}
+@media (max-width:767px) {
+    article button{
+        padding: 3px 7px;
+        font-size: 20px;
+    }
+}
+article button:hover{
+    color: white;
+    border: 1px white solid;
+    background-color: transparent;
+    transform: rotateY(1turn);
+    -webkit-transform: rotateY(1turn);
+    -moz-transform: rotateY(1turn);
+    -ms-transform: rotateY(1turn);
+    -o-transform: rotateY(1turn);
+}
